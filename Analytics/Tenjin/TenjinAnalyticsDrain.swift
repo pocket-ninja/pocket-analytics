@@ -2,16 +2,17 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
-import Analytics
-import UtilsCore
+import Foundation
 
-final class TenjinAnalyticsDrain: AnalyticsDrain {
-    func track(_ event: AnalyticsEvent) {
+public final class TenjinAnalyticsDrain: AnalyticsDrain {
+    public init() {}
+    
+    public func track(_ event: AnalyticsEvent) {
         switch event {
         case .error, .plain:
             return
         case let .purchase(id, transactionId, _, _, price, priceLocale):
-            TenjinSDK.sendEvent(withName: "Original Purchase")
+            TenjinWrapper.sendEvent(withName: "Original Purchase")
 
             guard
                 let receiptURL = Bundle.main.appStoreReceiptURL,
@@ -21,9 +22,9 @@ final class TenjinAnalyticsDrain: AnalyticsDrain {
                 return
             }
 
-            TenjinSDK.transaction(
+            TenjinWrapper.transaction(
                 withProductName: id,
-                andCurrencyCode: priceLocale.currencyCode ?? .empty,
+                andCurrencyCode: priceLocale.currencyCode ?? "",
                 andQuantity: 1,
                 andUnitPrice: NSDecimalNumber(decimal: price),
                 andTransactionId: transaction,

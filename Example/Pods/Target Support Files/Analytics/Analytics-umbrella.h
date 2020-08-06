@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "TenjinWrapper.h"
 
 FOUNDATION_EXPORT double AnalyticsVersionNumber;
 FOUNDATION_EXPORT const unsigned char AnalyticsVersionString[];

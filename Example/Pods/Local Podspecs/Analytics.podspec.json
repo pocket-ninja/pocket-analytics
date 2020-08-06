@@ -19,6 +19,7 @@
     "ios": "11.0"
   },
   "swift_versions": "5.2",
+  "static_framework": true,
   "default_subspecs": "Core",
   "subspecs": [
     {
@@ -29,7 +30,7 @@
       "name": "Facebook",
       "source_files": "Analytics/Facebook/**/*.{h,m,swift}",
       "dependencies": {
-        "Ads/Core": [
+        "Analytics/Core": [
 
         ],
         "FBSDKCoreKit": [
@@ -41,7 +42,7 @@
       "name": "Firebase",
       "source_files": "Analytics/Firebase/**/*.{h,m,swift}",
       "dependencies": {
-        "Ads/Core": [
+        "Analytics/Core": [
 
         ],
         "Firebase/Core": [
@@ -56,7 +57,7 @@
       "name": "Tenjin",
       "source_files": "Analytics/Tenjin/**/*.{h,m,swift}",
       "dependencies": {
-        "Ads/Core": [
+        "Analytics/Core": [
 
         ],
         "TenjinSDK": [

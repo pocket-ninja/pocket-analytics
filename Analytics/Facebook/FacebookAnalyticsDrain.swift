@@ -2,16 +2,17 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
-import Analytics
-import FBSDKCoreKit
 import Foundation
+import FBSDKCoreKit
 
-final class FacebookAnalyticsDrain: AnalyticsDrain {
-    init(tracksPurchases: Bool = true) {
+public final class FacebookAnalyticsDrain: AnalyticsDrain {
+    public let tracksPurchases: Bool
+    
+    public init(tracksPurchases: Bool = true) {
         self.tracksPurchases = tracksPurchases
     }
 
-    func track(_ event: AnalyticsEvent) {
+    public func track(_ event: AnalyticsEvent) {
         switch event {
         case let .plain(name, params, _):
             AppEvents.logEvent(
@@ -29,6 +30,4 @@ final class FacebookAnalyticsDrain: AnalyticsDrain {
             break
         }
     }
-
-    let tracksPurchases: Bool
 }

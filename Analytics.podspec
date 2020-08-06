@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.2'
 
+  s.static_framework = true
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
@@ -20,21 +21,20 @@ Pod::Spec.new do |s|
 
   s.subspec 'Facebook' do |f|
     f.source_files = 'Analytics/Facebook/**/*.{h,m,swift}'
-    f.dependency 'Ads/Core'
+    f.dependency 'Analytics/Core'
     f.dependency 'FBSDKCoreKit'
   end
 
   s.subspec 'Firebase' do |f|
     f.source_files = 'Analytics/Firebase/**/*.{h,m,swift}'
-    f.dependency 'Ads/Core'
+    f.dependency 'Analytics/Core'
     f.dependency 'Firebase/Core'
     f.dependency 'Firebase/Crashlytics'
   end
 
   s.subspec 'Tenjin' do |f|
     f.source_files = 'Analytics/Tenjin/**/*.{h,m,swift}'
-    f.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'Analytics/Tenjin/BridgingHeader.h' }
-    f.dependency 'Ads/Core'
+    f.dependency 'Analytics/Core'
     f.dependency 'TenjinSDK'
   end
 end

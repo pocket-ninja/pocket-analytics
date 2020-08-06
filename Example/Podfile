@@ -4,6 +4,6 @@ use_frameworks!
 target 'Analytics_Tests' do
   pod 'Analytics/Core', :path => '../'
   pod 'Analytics/Facebook', :path => '../'
-  pod 'Analytics/Tenjin', :path => '../'
   pod 'Analytics/Firebase', :path => '../'
+  pod 'Analytics/Tenjin', :path => '../'
 end

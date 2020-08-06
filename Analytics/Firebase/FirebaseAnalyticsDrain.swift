@@ -2,16 +2,14 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
-import Analytics
 import class FirebaseAnalytics.Analytics
 import FirebaseCrashlytics
 import Foundation
-import UtilsCore
 
-final class FirebaseAnalyticsDrain: AnalyticsDrain {
-    init() {}
+public final class FirebaseAnalyticsDrain: AnalyticsDrain {
+    public init() {}
 
-    func track(_ event: AnalyticsEvent) {
+    public func track(_ event: AnalyticsEvent) {
         switch event {
         case let .plain(name, params, _):
             FirebaseAnalytics.Analytics.logEvent(
@@ -19,7 +17,7 @@ final class FirebaseAnalyticsDrain: AnalyticsDrain {
                 parameters: params.whitespaceless
             )
         case let .error(error):
-            Crashlytics.crashlytics().record(error: error.nsError)
+            Crashlytics.crashlytics().record(error: error)
         case .purchase:
             /* Firebase tracks purchases automatically */
             break

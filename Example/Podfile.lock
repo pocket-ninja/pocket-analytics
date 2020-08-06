@@ -1,0 +1,16 @@
+PODS:
+  - Analytics/Core (1.0.0)
+
+DEPENDENCIES:
+  - Analytics/Core (from `../`)
+
+EXTERNAL SOURCES:
+  Analytics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Analytics: 99dd75555c6f470915e3698788c6596da30f8cf5
+
+PODFILE CHECKSUM: fbb6038aa01bce3255d56400b26aff54b3c30565
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,69 @@
+{
+  "name": "Analytics",
+  "version": "1.0.0",
+  "summary": "The Pocket Ninja Analytics lib",
+  "homepage": "https://github.com/pocket-ninja/analytics",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sroik": "vasili.kazhanouski@gmail.com"
+  },
+  "source": {
+    "git": "git@github.com:pocket-ninja/analytics.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "watchos": "3.0",
+    "ios": "11.0"
+  },
+  "swift_versions": "5.2",
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Analytics/Core/**/*.{h,m,swift}"
+    },
+    {
+      "name": "Facebook",
+      "source_files": "Analytics/Facebook/**/*.{h,m,swift}",
+      "dependencies": {
+        "Ads/Core": [
+
+        ],
+        "FBSDKCoreKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Firebase",
+      "source_files": "Analytics/Firebase/**/*.{h,m,swift}",
+      "dependencies": {
+        "Ads/Core": [
+
+        ],
+        "Firebase/Core": [
+
+        ],
+        "Firebase/Crashlytics": [
+
+        ]
+      }
+    },
+    {
+      "name": "Tenjin",
+      "source_files": "Analytics/Tenjin/**/*.{h,m,swift}",
+      "dependencies": {
+        "Ads/Core": [
+
+        ],
+        "TenjinSDK": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.2"
+}

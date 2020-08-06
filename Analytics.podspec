@@ -1,42 +1,40 @@
-#
-# Be sure to run `pod lib lint Analytics.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Analytics'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Analytics.'
+  s.version          = '1.0.0'
+  s.summary          = 'The Pocket Ninja Analytics lib'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/sroik/Analytics'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/pocket-ninja/analytics'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sroik' => 'vasili.kazhanouski@gmail.com' }
-  s.source           = { :git => 'https://github.com/sroik/Analytics.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'git@github.com:pocket-ninja/analytics.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '3.0'
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.2'
 
-  s.source_files = 'Analytics/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Analytics' => ['Analytics/Assets/*.png']
-  # }
+  s.default_subspec = 'Core'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Core' do |core|
+    core.source_files = 'Analytics/Core/**/*.{h,m,swift}'
+  end
+
+  s.subspec 'Facebook' do |f|
+    f.source_files = 'Analytics/Facebook/**/*.{h,m,swift}'
+    f.dependency 'Ads/Core'
+    f.dependency 'FBSDKCoreKit'
+  end
+
+  s.subspec 'Firebase' do |f|
+    f.source_files = 'Analytics/Firebase/**/*.{h,m,swift}'
+    f.dependency 'Ads/Core'
+    f.dependency 'Firebase/Core'
+    f.dependency 'Firebase/Crashlytics'
+  end
+
+  s.subspec 'Tenjin' do |f|
+    f.source_files = 'Analytics/Tenjin/**/*.{h,m,swift}'
+    f.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'Analytics/Tenjin/BridgingHeader.h' }
+    f.dependency 'Ads/Core'
+    f.dependency 'TenjinSDK'
+  end
 end

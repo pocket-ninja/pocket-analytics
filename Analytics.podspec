@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.author           = { 'sroik' => 'vasili.kazhanouski@gmail.com' }
   s.source           = { :git => 'git@github.com:pocket-ninja/analytics.git', :tag => s.version.to_s }
 
-  s.watchos.deployment_target = '3.0'
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.2'
 

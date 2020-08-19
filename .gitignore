@@ -75,7 +75,7 @@ DerivedData/
 # Note: if you ignore the Pods directory, make sure to uncomment
 # `pod install` in .travis.yml
 #
-# Pods/
+Example/Pods/
 
 # Created by https://www.gitignore.io/api/fastlane
 # Edit at https://www.gitignore.io/?templates=fastlane

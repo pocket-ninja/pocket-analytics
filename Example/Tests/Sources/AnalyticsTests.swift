@@ -4,7 +4,7 @@
 
 import Foundation
 import XCTest
-import Analytics
+import PocketAnalytics
 
 class AnalyticsTests: XCTestCase {
     func testAnalyticsTracksAppEventsInEnabledState() {

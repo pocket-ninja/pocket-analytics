@@ -2,7 +2,7 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import Analytics
+import PocketAnalytics
 
 extension AnalyticsEvent {
     static let shot: AnalyticsEvent = .plain(name: "Shot")

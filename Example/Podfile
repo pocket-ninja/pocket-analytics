@@ -2,8 +2,8 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'Analytics_Tests' do
-  pod 'Analytics/Core', :path => '../'
-  pod 'Analytics/Facebook', :path => '../'
-  pod 'Analytics/Firebase', :path => '../'
-  pod 'Analytics/Tenjin', :path => '../'
+  pod 'PocketAnalytics/Core', :path => '../'
+  pod 'PocketAnalytics/Facebook', :path => '../'
+  pod 'PocketAnalytics/Firebase', :path => '../'
+  pod 'PocketAnalytics/Tenjin', :path => '../'
 end

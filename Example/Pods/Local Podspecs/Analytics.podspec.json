@@ -1,6 +1,6 @@
 {
   "name": "Analytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "The Pocket Ninja Analytics lib",
   "homepage": "https://github.com/pocket-ninja/analytics",
   "license": {
@@ -12,10 +12,9 @@
   },
   "source": {
     "git": "git@github.com:pocket-ninja/analytics.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
-    "watchos": "3.0",
     "ios": "11.0"
   },
   "swift_versions": "5.2",

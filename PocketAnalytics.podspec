@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'Analytics'
+  s.name             = 'PocketAnalytics'
   s.version          = '1.0.1'
   s.summary          = 'The Pocket Ninja Analytics lib'
 
@@ -20,20 +20,20 @@ Pod::Spec.new do |s|
 
   s.subspec 'Facebook' do |f|
     f.source_files = 'Analytics/Facebook/**/*.{h,m,swift}'
-    f.dependency 'Analytics/Core'
+    f.dependency 'PocketAnalytics/Core'
     f.dependency 'FBSDKCoreKit'
   end
 
   s.subspec 'Firebase' do |f|
     f.source_files = 'Analytics/Firebase/**/*.{h,m,swift}'
-    f.dependency 'Analytics/Core'
+    f.dependency 'PocketAnalytics/Core'
     f.dependency 'Firebase/Core'
     f.dependency 'Firebase/Crashlytics'
   end
 
   s.subspec 'Tenjin' do |f|
     f.source_files = 'Analytics/Tenjin/**/*.{h,m,swift}'
-    f.dependency 'Analytics/Core'
+    f.dependency 'PocketAnalytics/Core'
     f.dependency 'TenjinSDK'
   end
 end

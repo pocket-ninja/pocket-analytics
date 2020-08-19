@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PocketAnalytics'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'The Pocket Ninja Analytics lib'
 
   s.homepage         = 'https://github.com/pocket-ninja/analytics'

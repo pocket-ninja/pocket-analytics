@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PocketAnalytics'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'The Pocket Ninja Analytics lib'
 
   s.homepage         = 'https://github.com/pocket-ninja/analytics'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'git@github.com:pocket-ninja/analytics.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
-  s.swift_version = '5.2'
+  s.swift_version = '5.3'
 
   s.static_framework = true
   s.default_subspec = 'Core'

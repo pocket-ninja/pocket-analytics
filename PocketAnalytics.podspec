@@ -24,6 +24,12 @@ Pod::Spec.new do |s|
     f.dependency 'FBSDKCoreKit'
   end
 
+  s.subspec 'AppsFlyer' do |f|
+    f.source_files = 'Analytics/AppsFlyer/**/*.{h,m,swift}'
+    f.dependency 'PocketAnalytics/Core'
+    f.dependency 'AppsFlyerFramework'
+  end
+
   s.subspec 'Firebase' do |f|
     f.source_files = 'Analytics/Firebase/**/*.{h,m,swift}'
     f.dependency 'PocketAnalytics/Core'

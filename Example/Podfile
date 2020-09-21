@@ -6,4 +6,5 @@ target 'Analytics_Tests' do
   pod 'PocketAnalytics/Facebook', :path => '../'
   pod 'PocketAnalytics/Firebase', :path => '../'
   pod 'PocketAnalytics/Tenjin', :path => '../'
+  pod 'PocketAnalytics/AppsFlyer', :path => '../'
 end

@@ -5,8 +5,10 @@
 import Foundation
 import AppsFlyerLib
 
-final class AppsFlyerAnalyticsDrain: AnalyticsDrain {
-    func track(_ event: AnalyticsEvent) {
+public final class AppsFlyerAnalyticsDrain: AnalyticsDrain {
+    public init() {}
+    
+    public func track(_ event: AnalyticsEvent) {
         switch event {
         case .error, .plain:
             return

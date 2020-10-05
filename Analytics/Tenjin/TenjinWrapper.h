@@ -16,6 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
                       andUnitPrice:(NSDecimalNumber *)price
                   andTransactionId:(NSString *)transactionId
                         andReceipt:(NSData *)receipt;
+
++ (void)setup:(NSString *)apiKey;
+
++ (void)optIn;
+
++ (void)optOut;
+
++ (void)connect;
+
 @end
 
 NS_ASSUME_NONNULL_END

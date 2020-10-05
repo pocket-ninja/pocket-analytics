@@ -25,4 +25,20 @@
                                andReceipt:receipt];
 }
 
++ (void)setup:(NSString *)apiKey {
+    [TenjinSDK getInstance:apiKey];
+}
+
++ (void)optIn {
+    [TenjinSDK optIn];
+}
+
++ (void)optOut {
+    [TenjinSDK optOut];
+}
+
++ (void)connect {
+    [TenjinSDK connect];
+}
+
 @end

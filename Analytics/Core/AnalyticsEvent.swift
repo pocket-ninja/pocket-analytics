@@ -22,7 +22,6 @@ public enum AnalyticsEvent: Hashable {
     case purchase(
         id: String,
         transactionId: String?,
-        type: PurchaseType,
         params: Params = [:],
         price: Decimal,
         priceLocale: Locale
@@ -45,7 +44,7 @@ extension AnalyticsEvent: OneShotable {
         switch self {
         case let .plain(name, _ , _):
             return "disposable_event_\(name)"
-        case let .purchase(id, _, _ , _, _, _):
+        case let .purchase(id, _ , _, _, _):
             return "disposable_event_\(id)"
         case let .error(error):
             return "disposable_event_\(error.domain)"

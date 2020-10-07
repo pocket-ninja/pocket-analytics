@@ -75,18 +75,18 @@ PODS:
     - nanopb/encode (= 1.30906.0)
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
-  - PocketAnalytics/AppsFlyer (1.0.3):
+  - PocketAnalytics/AppsFlyer (1.0.4):
     - AppsFlyerFramework
     - PocketAnalytics/Core
-  - PocketAnalytics/Core (1.0.3)
-  - PocketAnalytics/Facebook (1.0.3):
+  - PocketAnalytics/Core (1.0.4)
+  - PocketAnalytics/Facebook (1.0.4):
     - FBSDKCoreKit
     - PocketAnalytics/Core
-  - PocketAnalytics/Firebase (1.0.3):
+  - PocketAnalytics/Firebase (1.0.4):
     - Firebase/Core
     - Firebase/Crashlytics
     - PocketAnalytics/Core
-  - PocketAnalytics/Tenjin (1.0.3):
+  - PocketAnalytics/Tenjin (1.0.4):
     - PocketAnalytics/Core
     - TenjinSDK
   - PromisesObjC (1.2.10)
@@ -133,7 +133,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: e85fb700c9b027079ce182c3d08e12e0f9618bb4
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
-  PocketAnalytics: 9ac856b6f5e45d862f1167f41acd75e1423de5fa
+  PocketAnalytics: c6d828b2188c441e0b317c49226a213a6bd84dd0
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   TenjinSDK: 3bb67f7ce97cdd246482dfc5aa6b18b035692763
 

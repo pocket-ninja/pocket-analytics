@@ -11,7 +11,7 @@ public final class TenjinAnalyticsDrain: AnalyticsDrain {
         switch event {
         case .error, .plain:
             return
-        case let .purchase(id, transactionId, _, _, price, priceLocale):
+        case let .purchase(id, transactionId, _, price, priceLocale):
             TenjinWrapper.sendEvent(withName: "Original Purchase")
 
             guard

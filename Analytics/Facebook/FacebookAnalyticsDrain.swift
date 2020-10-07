@@ -20,7 +20,7 @@ public final class FacebookAnalyticsDrain: AnalyticsDrain {
                 parameters: params
             )
 
-        case let .purchase(_, _, _, params, price, priceLocale) where tracksPurchases:
+        case let .purchase(_, _, params, price, priceLocale) where tracksPurchases:
             AppEvents.logPurchase(
                 NSDecimalNumber(decimal: price).doubleValue,
                 currency: priceLocale.currencyCode ?? "",

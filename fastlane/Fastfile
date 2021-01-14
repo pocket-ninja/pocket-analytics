@@ -3,9 +3,12 @@ skip_docs
 opt_out_usage
 
 $scheme = 'Analytics-Example'
-$podspecs = ['PocketAnalyticsDrain.podspec', 'PocketAnalytics.podspec']
 $workspace = './Example/Analytics.xcworkspace'
 $specsrepo = 'git@github.com:pocket-ninja/specs.git'
+$podspecs = [
+  'PocketAnalytics.podspec', 
+  'PocketAnalyticsDrain.podspec'
+]
 
 before_all do |lane, options|
   if options[:skip_checks]

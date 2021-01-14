@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PocketAnalytics'
-  s.version          = '1.0.5'
+  s.version          = '1.1.0'
   s.summary          = 'The Pocket Ninja Analytics lib'
   s.homepage         = 'https://github.com/pocket-ninja/analytics'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

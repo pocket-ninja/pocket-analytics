@@ -56,10 +56,13 @@ private_lane :update do |options|
     return
   end
   
+  version = nil
   $podspecs.each do |spec|
     version = version_bump_podspec(path: spec, bump_type: type)
   end
   
+  UI.message("Version bumped: #{version}")
+
   git_commit(path: $podspecs, message: "Updating podspec")
   add_git_tag(tag: version)
 end

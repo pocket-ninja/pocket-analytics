@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import PocketAnalytics
 
 public final class TenjinAnalyticsDrain: AnalyticsDrain {
     public init() {}

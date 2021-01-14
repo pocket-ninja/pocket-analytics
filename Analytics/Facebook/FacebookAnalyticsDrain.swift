@@ -4,6 +4,7 @@
 
 import Foundation
 import FBSDKCoreKit
+import PocketAnalytics
 
 public final class FacebookAnalyticsDrain: AnalyticsDrain {
     public let tracksPurchases: Bool

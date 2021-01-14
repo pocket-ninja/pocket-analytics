@@ -4,6 +4,7 @@
 
 import Foundation
 import AppsFlyerLib
+import PocketAnalytics
 
 public final class AppsFlyerAnalyticsDrain: AnalyticsDrain {
     public init() {}

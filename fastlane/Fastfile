@@ -3,7 +3,7 @@ skip_docs
 opt_out_usage
 
 $scheme = 'Analytics-Example'
-$podspec = 'PocketAnalytics.podspec'
+$podspecs = ['PocketAnalyticsDrain.podspec', 'PocketAnalytics.podspec']
 $workspace = './Example/Analytics.xcworkspace'
 $specsrepo = 'git@github.com:pocket-ninja/specs.git'
 
@@ -33,12 +33,14 @@ lane :submit_pod do |options|
     remote_branch: "master",
     remote: "origin"
   )
-
-  pod_push(
-    path: $podspec,
-    repo: $specsrepo,
-    allow_warnings: true
-  )
+  
+  $podspecs.each do |spec|
+    pod_push(
+      path: spec,
+      repo: $specsrepo,
+      allow_warnings: true
+    )
+  end 
 end
 
 private_lane :update do |options|
@@ -57,8 +59,11 @@ private_lane :update do |options|
     UI.message("No version type found")
     return
   end
-
-  version = version_bump_podspec(path: $podspec, bump_type: type)
-  git_commit(path: $podspec, message: "Updating podspec")
+  
+  podspecs.each do |spec|
+    version = version_bump_podspec(path: spec, bump_type: type)
+  end
+  
+  git_commit(path: $podspecs, message: "Updating podspec")
   add_git_tag(tag: version)
 end

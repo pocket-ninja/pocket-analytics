@@ -5,6 +5,7 @@
 import class FirebaseAnalytics.Analytics
 import FirebaseCrashlytics
 import Foundation
+import PocketAnalytics
 
 public final class FirebaseAnalyticsDrain: AnalyticsDrain {
     public init() {}

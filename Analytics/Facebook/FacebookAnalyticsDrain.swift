@@ -9,7 +9,7 @@ import PocketAnalytics
 public final class FacebookAnalyticsDrain: AnalyticsDrain {
     public let tracksPurchases: Bool
     
-    public init(tracksPurchases: Bool = true) {
+    public init(tracksPurchases: Bool) {
         self.tracksPurchases = tracksPurchases
     }
 

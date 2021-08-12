@@ -11,6 +11,10 @@
     [TenjinSDK sendEventWithName:eventName];
 }
 
++ (void)updateConversionValue:(int)conversionValue {
+    [TenjinSDK updateConversionValue:conversionValue];
+}
+
 + (void)transactionWithProductName:(NSString *)productName
                    andCurrencyCode:(NSString *)currencyCode
                        andQuantity:(NSInteger)quantity

@@ -6,7 +6,9 @@ import Foundation
 import PocketAnalytics
 
 public final class TenjinAnalyticsDrain: AnalyticsDrain {
-    public init() {}
+    public init(conversionValueOnPurchase: Int32?) {
+        self.conversionValueOnPurchase = conversionValueOnPurchase
+    }
     
     public func track(_ event: AnalyticsEvent) {
         switch event {
@@ -14,6 +16,10 @@ public final class TenjinAnalyticsDrain: AnalyticsDrain {
             return
         case let .purchase(id, transactionId, _, price, priceLocale):
             TenjinWrapper.sendEvent(withName: "Original Purchase")
+            
+            if let cv = conversionValueOnPurchase {
+                TenjinWrapper.updateConversionValue(cv)
+            }
 
             guard
                 let receiptURL = Bundle.main.appStoreReceiptURL,
@@ -33,4 +39,6 @@ public final class TenjinAnalyticsDrain: AnalyticsDrain {
             )
         }
     }
+    
+    private let conversionValueOnPurchase: Int32?
 }

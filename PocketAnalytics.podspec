@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
   s.name             = 'PocketAnalytics'
   s.version          = '1.2.3'
   s.summary          = 'The Pocket Ninja Analytics lib'
-  s.homepage         = 'https://github.com/pocket-ninja/analytics'
+  s.homepage         = 'https://github.com/pocket-ninja/pocket-analytics'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sroik' => 'vasili.kazhanouski@gmail.com' }
-  s.source           = { :git => 'git@github.com:pocket-ninja/analytics.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:pocket-ninja/pocket-analytics.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
   s.watchos.deployment_target = '6.2'
   s.swift_version = '5.3'

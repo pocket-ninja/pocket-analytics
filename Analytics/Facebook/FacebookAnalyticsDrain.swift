@@ -18,7 +18,7 @@ public final class FacebookAnalyticsDrain: AnalyticsDrain {
         case let .plain(name, params, _):
             AppEvents.logEvent(
                 AppEvents.Name(name),
-                parameters: params
+                parameters: params.fbFormatted()
             )
 
         case let .purchase(_, _, params, price, priceLocale) where tracksPurchases:
@@ -30,5 +30,15 @@ public final class FacebookAnalyticsDrain: AnalyticsDrain {
         case .error, .purchase:
             break
         }
+    }
+}
+
+private extension Dictionary where Key == String, Value == String {
+    func fbFormatted() -> [AppEvents.ParameterName: String] {
+        let keyValues: [(AppEvents.ParameterName, String)] = map {
+            (AppEvents.ParameterName($0), $1)
+        }
+        
+        return Dictionary<AppEvents.ParameterName, String>(uniqueKeysWithValues: keyValues)
     }
 }

@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sroik' => 'vasili.kazhanouski@gmail.com' }
   s.source           = { :git => 'git@github.com:pocket-ninja/pocket-analytics.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
   s.watchos.deployment_target = '6.2'
   s.swift_version = '5.3'
   s.static_framework = true

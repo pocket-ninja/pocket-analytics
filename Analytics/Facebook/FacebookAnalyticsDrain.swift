@@ -16,14 +16,14 @@ public final class FacebookAnalyticsDrain: AnalyticsDrain {
     public func track(_ event: AnalyticsEvent) {
         switch event {
         case let .plain(name, params, _):
-            AppEvents.logEvent(
+            AppEvents.shared.logEvent(
                 AppEvents.Name(name),
                 parameters: params.fbFormatted()
             )
 
         case let .purchase(_, _, params, price, priceLocale) where tracksPurchases:
-            AppEvents.logPurchase(
-                NSDecimalNumber(decimal: price).doubleValue,
+            AppEvents.shared.logPurchase(
+                amount: NSDecimalNumber(decimal: price).doubleValue,
                 currency: priceLocale.currencyCode ?? "",
                 parameters: params
             )

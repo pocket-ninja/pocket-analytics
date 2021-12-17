@@ -6,8 +6,11 @@ import Foundation
 import PocketAnalytics
 
 public final class TenjinAnalyticsDrain: AnalyticsDrain {
-    public init(conversionValueOnPurchase: Int32?) {
+    public let tracksPurchases: Bool
+    
+    public init(tracksPurchases: Bool, conversionValueOnPurchase: Int32?) {
         self.conversionValueOnPurchase = conversionValueOnPurchase
+        self.tracksPurchases = tracksPurchases
     }
     
     public func track(_ event: AnalyticsEvent) {
@@ -22,6 +25,7 @@ public final class TenjinAnalyticsDrain: AnalyticsDrain {
             }
 
             guard
+                tracksPurchases,
                 let receiptURL = Bundle.main.appStoreReceiptURL,
                 let receipt = try? Data(contentsOf: receiptURL),
                 let transaction = transactionId

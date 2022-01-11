@@ -47,11 +47,6 @@ lane :submit_pod do |options|
 end
 
 private_lane :update do |options|
-  scan(
-    workspace: $workspace,
-    scheme: $scheme
-  )
-
   type = options[:type]
 
   if type == "none"

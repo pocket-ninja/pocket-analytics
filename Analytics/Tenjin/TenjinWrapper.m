@@ -29,6 +29,16 @@
                                andReceipt:receipt];
 }
 
++ (void)transactionWithProductName:(NSString *)productName
+                   andCurrencyCode:(NSString *)currencyCode
+                       andQuantity:(NSInteger)quantity
+                      andUnitPrice:(NSDecimalNumber *)price {
+    [TenjinSDK transactionWithProductName:productName
+                          andCurrencyCode:currencyCode
+                              andQuantity:quantity
+                             andUnitPrice:price];
+}
+
 + (void)setup:(NSString *)apiKey {
     [TenjinSDK getInstance:apiKey];
 }

@@ -19,6 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
                   andTransactionId:(NSString *)transactionId
                         andReceipt:(NSData *)receipt;
 
++ (void)transactionWithProductName:(NSString *)productName
+                   andCurrencyCode:(NSString *)currencyCode
+                       andQuantity:(NSInteger)quantity
+                      andUnitPrice:(NSDecimalNumber *)price;
+
 + (void)setup:(NSString *)apiKey;
 
 + (void)optIn;

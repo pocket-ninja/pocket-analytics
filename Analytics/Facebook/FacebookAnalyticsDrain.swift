@@ -25,7 +25,7 @@ public final class FacebookAnalyticsDrain: AnalyticsDrain {
             AppEvents.shared.logPurchase(
                 amount: NSDecimalNumber(decimal: price).doubleValue,
                 currency: priceLocale.currencyCode ?? "",
-                parameters: params
+                parameters: params.fbFormatted()
             )
         case .error, .purchase:
             break

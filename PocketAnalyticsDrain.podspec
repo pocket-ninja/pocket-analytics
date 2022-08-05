@@ -27,22 +27,28 @@ Pod::Spec.new do |s|
     f.dependency 'FBSDKCoreKit'
   end
 
-  s.subspec 'AppsFlyer' do |f|
-    f.source_files = 'Analytics/AppsFlyer/**/*.{h,m,swift}'
-    f.dependency 'PocketAnalytics'
-    f.dependency 'AppsFlyerFramework'
+  s.subspec 'AppsFlyer' do |ss|
+    ss.source_files = 'Analytics/AppsFlyer/**/*.{h,m,swift}'
+    ss.dependency 'PocketAnalytics'
+    ss.dependency 'AppsFlyerFramework'
   end
 
-  s.subspec 'Firebase' do |f|
-    f.source_files = 'Analytics/Firebase/**/*.{h,m,swift}'
-    f.dependency 'PocketAnalytics'
-    f.dependency 'Firebase/Core'
-    f.dependency 'Firebase/Crashlytics'
+  s.subspec 'Firebase' do |ss|
+    ss.source_files = 'Analytics/Firebase/**/*.{h,m,swift}'
+    ss.dependency 'PocketAnalytics'
+    ss.dependency 'Firebase/Core'
+    ss.dependency 'Firebase/Crashlytics'
   end
 
-  s.subspec 'Tenjin' do |f|
-    f.source_files = 'Analytics/Tenjin/**/*.{h,m,swift}'
-    f.dependency 'PocketAnalytics'
-    f.dependency 'TenjinSDK'
+  s.subspec 'Tenjin' do |ss|
+    ss.source_files = 'Analytics/Tenjin/**/*.{h,m,swift}'
+    ss.dependency 'PocketAnalytics'
+    ss.dependency 'TenjinSDK'
+  end
+  
+  s.subspec 'Yandex' do |ss|
+    ss.source_files = 'Analytics/Yandex/**/*.{h,m,swift}'
+    ss.dependency 'PocketAnalytics'
+    ss.dependency 'YandexMobileMetrica/Dynamic'
   end
 end

@@ -7,4 +7,5 @@ target 'Analytics_Tests' do
   pod 'PocketAnalyticsDrain/Firebase', :path => '../'
   pod 'PocketAnalyticsDrain/Tenjin', :path => '../'
   pod 'PocketAnalyticsDrain/AppsFlyer', :path => '../'
+  pod 'PocketAnalyticsDrain/Yandex', :path => '../'
 end

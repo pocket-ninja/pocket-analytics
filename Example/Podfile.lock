@@ -103,22 +103,31 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
-  - PocketAnalytics (1.2.7)
-  - PocketAnalyticsDrain/AppsFlyer (1.2.7):
+  - PocketAnalytics (1.2.8)
+  - PocketAnalyticsDrain/AppsFlyer (1.2.8):
     - AppsFlyerFramework
     - PocketAnalytics
-  - PocketAnalyticsDrain/Facebook (1.2.7):
+  - PocketAnalyticsDrain/Facebook (1.2.8):
     - FBSDKCoreKit
     - PocketAnalytics
-  - PocketAnalyticsDrain/Firebase (1.2.7):
+  - PocketAnalyticsDrain/Firebase (1.2.8):
     - Firebase/Core
     - Firebase/Crashlytics
     - PocketAnalytics
-  - PocketAnalyticsDrain/Tenjin (1.2.7):
+  - PocketAnalyticsDrain/Tenjin (1.2.8):
     - PocketAnalytics
     - TenjinSDK
+  - PocketAnalyticsDrain/Yandex (1.2.8):
+    - PocketAnalytics
+    - YandexMobileMetrica/Dynamic
   - PromisesObjC (2.0.0)
   - TenjinSDK (1.12.7)
+  - YandexMobileMetrica/Dynamic (4.2.0):
+    - YandexMobileMetrica/Dynamic/Core (= 4.2.0)
+    - YandexMobileMetrica/Dynamic/Crashes (= 4.2.0)
+  - YandexMobileMetrica/Dynamic/Core (4.2.0)
+  - YandexMobileMetrica/Dynamic/Crashes (4.2.0):
+    - YandexMobileMetrica/Dynamic/Core
 
 DEPENDENCIES:
   - PocketAnalytics (from `../`)
@@ -126,6 +135,7 @@ DEPENDENCIES:
   - PocketAnalyticsDrain/Facebook (from `../`)
   - PocketAnalyticsDrain/Firebase (from `../`)
   - PocketAnalyticsDrain/Tenjin (from `../`)
+  - PocketAnalyticsDrain/Yandex (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -145,6 +155,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - TenjinSDK
+    - YandexMobileMetrica
 
 EXTERNAL SOURCES:
   PocketAnalytics:
@@ -167,11 +178,12 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PocketAnalytics: 190efd720c70278fff7fcddd0e819a6d88635b1d
-  PocketAnalyticsDrain: 56a37d18e89f051abb94676416c9c7d5976c82ba
+  PocketAnalytics: ab5ccec1bea399270b904c1cac495aaebf96e1e8
+  PocketAnalyticsDrain: 6bae2a81ddf37f63de2da048641b029fd8e9798a
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   TenjinSDK: 5220e9a21c13f6b91ac579d9c8ce2ee537a55b6d
+  YandexMobileMetrica: f5f9c605eaaba33ff6ab2b6bc3259035ca60ed87
 
-PODFILE CHECKSUM: 5daf287979e4c128c7c2f3b78c03bb162772caf9
+PODFILE CHECKSUM: e78a749abe26a1a2477149aa6496cba9e670d449
 
 COCOAPODS: 1.11.2

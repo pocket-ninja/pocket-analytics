@@ -7,6 +7,8 @@ import PocketAnalytics
 import YandexMobileMetrica
 
 public final class YandexMetricaAnalyticsDrain: AnalyticsDrain {
+    public init() {}
+    
     public func track(_ event: AnalyticsEvent) {
         switch event {
         case let .plain(name, params, _):

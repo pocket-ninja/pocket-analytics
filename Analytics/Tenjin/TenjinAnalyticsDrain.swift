@@ -33,7 +33,7 @@ public final class TenjinAnalyticsDrain: AnalyticsDrain {
             TenjinWrapper.sendEvent(withName: "Original Purchase")
             
             if let cv = conversionValueOnPurchase {
-                TenjinWrapper.updateConversionValue(cv)
+                TenjinWrapper.updatePostbackConversionValue(cv)
             }
 
             switch purchasesTrackingMode {

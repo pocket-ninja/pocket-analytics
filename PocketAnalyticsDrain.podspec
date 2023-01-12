@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.author           = { 'sroik' => 'vasili.kazhanouski@gmail.com' }
   s.source           = { :git => 'git@github.com:pocket-ninja/pocket-analytics.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
-  s.swift_version = '5.3'
+  s.ios.deployment_target = '14.0'
+  s.swift_version = '5.5'
 
   s.static_framework = true
   s.default_subspec = 'Core'

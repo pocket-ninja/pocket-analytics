@@ -11,8 +11,8 @@
     [TenjinSDK sendEventWithName:eventName];
 }
 
-+ (void)updateConversionValue:(int)conversionValue {
-    [TenjinSDK updateConversionValue:conversionValue];
++ (void)updatePostbackConversionValue:(int)conversionValue {
+    [TenjinSDK updatePostbackConversionValue:conversionValue];
 }
 
 + (void)transactionWithProductName:(NSString *)productName

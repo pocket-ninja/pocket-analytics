@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)sendEventWithName:(NSString *)eventName;
 
-+ (void)updateConversionValue:(int)conversionValue;
++ (void)updatePostbackConversionValue:(int)conversionValue;
 
 + (void)transactionWithProductName:(NSString *)productName
                    andCurrencyCode:(NSString *)currencyCode

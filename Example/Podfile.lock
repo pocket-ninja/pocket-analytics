@@ -100,21 +100,21 @@ PODS:
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
-  - PocketAnalytics (1.2.11)
-  - PocketAnalyticsDrain/AppsFlyer (1.2.11):
+  - PocketAnalytics (1.2.12)
+  - PocketAnalyticsDrain/AppsFlyer (1.2.12):
     - AppsFlyerFramework
     - PocketAnalytics
-  - PocketAnalyticsDrain/Facebook (1.2.11):
+  - PocketAnalyticsDrain/Facebook (1.2.12):
     - FBSDKCoreKit
     - PocketAnalytics
-  - PocketAnalyticsDrain/Firebase (1.2.11):
+  - PocketAnalyticsDrain/Firebase (1.2.12):
     - Firebase/Core
     - Firebase/Crashlytics
     - PocketAnalytics
-  - PocketAnalyticsDrain/Tenjin (1.2.11):
+  - PocketAnalyticsDrain/Tenjin (1.2.12):
     - PocketAnalytics
     - TenjinSDK
-  - PocketAnalyticsDrain/Yandex (1.2.11):
+  - PocketAnalyticsDrain/Yandex (1.2.12):
     - PocketAnalytics
     - YandexMobileMetrica/Dynamic
   - PromisesObjC (2.1.1)
@@ -175,8 +175,8 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
   GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  PocketAnalytics: 640b973e50f199f23d6d558abb907be59c5ffe14
-  PocketAnalyticsDrain: 9a313cdd12398d65a1ad343ff388fff6c1f2eac8
+  PocketAnalytics: cebecd2614db363b6cbfc5de4430b9fddd96b297
+  PocketAnalyticsDrain: 5c6347be8cd922517449428b3416ae648f009244
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   TenjinSDK: ee5c75ddf4d7e0ea1b8da79ccd83f5d919ab5d68
   YandexMobileMetrica: baf7cea47cb87fc9af963c4f747ce8dd7df3d7c0

@@ -1,12 +1,12 @@
 //
-//  Copyright © 2022 sroik. All rights reserved.
+//  Copyright © 2025 sroik. All rights reserved.
 //
 
 import Foundation
 import PocketAnalytics
 import AppMetricaCore
 
-public final class YandexMetricaAnalyticsDrain: AnalyticsDrain {
+public final class AppMetricaAnalyticsDrain: AnalyticsDrain {
     public init() {}
     
     public func track(_ event: AnalyticsEvent) {

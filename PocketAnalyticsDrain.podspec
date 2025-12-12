@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PocketAnalyticsDrain'
   s.version          = '1.2.14'
-  s.summary          = 'The Pocket Ninja Analytics lib'
+  s.summary          = 'Pocket Apps Analytics library'
 
   s.homepage         = 'https://github.com/pocket-ninja/pocket-analytics'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -22,12 +22,6 @@ Pod::Spec.new do |s|
     f.source_files = 'Analytics/Facebook/**/*.{h,m,swift}'
     f.dependency 'PocketAnalytics'
     f.dependency 'FBSDKCoreKit'
-  end
-
-  s.subspec 'AppsFlyer' do |ss|
-    ss.source_files = 'Analytics/AppsFlyer/**/*.{h,m,swift}'
-    ss.dependency 'PocketAnalytics'
-    ss.dependency 'AppsFlyerFramework'
   end
 
   s.subspec 'Firebase' do |ss|

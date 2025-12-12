@@ -1,4 +1,4 @@
-platform :ios, '14.0'
+platform :ios, '15.0'
 use_frameworks!
 
 target 'Analytics_Tests' do
@@ -6,6 +6,5 @@ target 'Analytics_Tests' do
   pod 'PocketAnalyticsDrain/Facebook', :path => '../'
   pod 'PocketAnalyticsDrain/Firebase', :path => '../'
   pod 'PocketAnalyticsDrain/Tenjin', :path => '../'
-  pod 'PocketAnalyticsDrain/AppsFlyer', :path => '../'
-  pod 'PocketAnalyticsDrain/Yandex', :path => '../'
+  pod 'PocketAnalyticsDrain/AppMetrica', :path => '../'
 end

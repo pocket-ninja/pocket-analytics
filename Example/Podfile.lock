@@ -1,158 +1,253 @@
 PODS:
-  - AppsFlyerFramework (6.9.1):
-    - AppsFlyerFramework/Main (= 6.9.1)
-  - AppsFlyerFramework/Main (6.9.1)
-  - FBAEMKit (15.1.0):
-    - FBSDKCoreKit_Basics (= 15.1.0)
-  - FBSDKCoreKit (15.1.0):
-    - FBAEMKit (= 15.1.0)
-    - FBSDKCoreKit_Basics (= 15.1.0)
-  - FBSDKCoreKit_Basics (15.1.0)
-  - Firebase/Core (10.3.0):
+  - AppMetricaAdSupport (5.15.0):
+    - AppMetricaCore (= 5.15.0)
+    - AppMetricaCoreExtension (= 5.15.0)
+  - AppMetricaCore (5.15.0):
+    - AppMetricaCoreUtils (= 5.15.0)
+    - AppMetricaEncodingUtils (= 5.15.0)
+    - AppMetricaFMDB (= 5.15.0)
+    - AppMetricaHostState (= 5.15.0)
+    - AppMetricaIdentifiers (= 5.15.0)
+    - AppMetricaKeychain (= 5.15.0)
+    - AppMetricaLog (= 5.15.0)
+    - AppMetricaNetwork (= 5.15.0)
+    - AppMetricaPlatform (= 5.15.0)
+    - AppMetricaProtobuf (= 5.15.0)
+    - AppMetricaProtobufUtils (= 5.15.0)
+    - AppMetricaStorageUtils (= 5.15.0)
+  - AppMetricaCoreExtension (5.15.0):
+    - AppMetricaCore (= 5.15.0)
+    - AppMetricaStorageUtils (= 5.15.0)
+  - AppMetricaCoreUtils (5.15.0):
+    - AppMetricaLog (= 5.15.0)
+  - AppMetricaEncodingUtils (5.15.0):
+    - AppMetricaCoreUtils (= 5.15.0)
+    - AppMetricaLog (= 5.15.0)
+    - AppMetricaPlatform (= 5.15.0)
+  - AppMetricaFMDB (5.15.0)
+  - AppMetricaHostState (5.15.0):
+    - AppMetricaCoreUtils (= 5.15.0)
+    - AppMetricaLog (= 5.15.0)
+  - AppMetricaIdentifiers (5.15.0):
+    - AppMetricaKeychain (= 5.15.0)
+    - AppMetricaLogSwift (= 5.15.0)
+    - AppMetricaPlatform (= 5.15.0)
+    - AppMetricaStorageUtils (= 5.15.0)
+    - AppMetricaSynchronization (= 5.15.0)
+  - AppMetricaKeychain (5.15.0):
+    - AppMetricaCoreUtils (= 5.15.0)
+    - AppMetricaLog (= 5.15.0)
+    - AppMetricaStorageUtils (= 5.15.0)
+  - AppMetricaLog (5.15.0)
+  - AppMetricaLogSwift (5.15.0):
+    - AppMetricaLog (= 5.15.0)
+  - AppMetricaNetwork (5.15.0):
+    - AppMetricaCoreUtils (= 5.15.0)
+    - AppMetricaLog (= 5.15.0)
+    - AppMetricaPlatform (= 5.15.0)
+  - AppMetricaPlatform (5.15.0):
+    - AppMetricaCoreUtils (= 5.15.0)
+    - AppMetricaLog (= 5.15.0)
+  - AppMetricaProtobuf (5.15.0)
+  - AppMetricaProtobufUtils (5.15.0):
+    - AppMetricaProtobuf (= 5.15.0)
+  - AppMetricaStorageUtils (5.15.0):
+    - AppMetricaCoreUtils (= 5.15.0)
+    - AppMetricaLog (= 5.15.0)
+  - AppMetricaSynchronization (5.15.0):
+    - AppMetricaLogSwift (= 5.15.0)
+  - FBAEMKit (18.0.2):
+    - FBSDKCoreKit_Basics (= 18.0.2)
+  - FBSDKCoreKit (18.0.2):
+    - FBAEMKit (= 18.0.2)
+    - FBSDKCoreKit_Basics (= 18.0.2)
+  - FBSDKCoreKit_Basics (18.0.2)
+  - Firebase/Core (12.7.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (~> 10.3.0)
-  - Firebase/CoreOnly (10.3.0):
-    - FirebaseCore (= 10.3.0)
-  - Firebase/Crashlytics (10.3.0):
+    - FirebaseAnalytics (~> 12.7.0)
+  - Firebase/CoreOnly (12.7.0):
+    - FirebaseCore (~> 12.7.0)
+  - Firebase/Crashlytics (12.7.0):
     - Firebase/CoreOnly
-    - FirebaseCrashlytics (~> 10.3.0)
-  - FirebaseAnalytics (10.3.0):
-    - FirebaseAnalytics/AdIdSupport (= 10.3.0)
-    - FirebaseCore (~> 10.0)
-    - FirebaseInstallations (~> 10.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseAnalytics/AdIdSupport (10.3.0):
-    - FirebaseCore (~> 10.0)
-    - FirebaseInstallations (~> 10.0)
-    - GoogleAppMeasurement (= 10.3.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseCore (10.3.0):
-    - FirebaseCoreInternal (~> 10.0)
-    - GoogleUtilities/Environment (~> 7.8)
-    - GoogleUtilities/Logger (~> 7.8)
-  - FirebaseCoreInternal (10.3.0):
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
-  - FirebaseCrashlytics (10.3.0):
-    - FirebaseCore (~> 10.0)
-    - FirebaseInstallations (~> 10.0)
-    - GoogleDataTransport (~> 9.2)
-    - GoogleUtilities/Environment (~> 7.8)
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-    - PromisesObjC (~> 2.1)
-  - FirebaseInstallations (10.3.0):
-    - FirebaseCore (~> 10.0)
-    - GoogleUtilities/Environment (~> 7.8)
-    - GoogleUtilities/UserDefaults (~> 7.8)
-    - PromisesObjC (~> 2.1)
-  - GoogleAppMeasurement (10.3.0):
-    - GoogleAppMeasurement/AdIdSupport (= 10.3.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (10.3.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.3.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (10.3.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/MethodSwizzler (~> 7.8)
-    - GoogleUtilities/Network (~> 7.8)
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleDataTransport (9.2.0):
-    - GoogleUtilities/Environment (~> 7.7)
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/AppDelegateSwizzler (7.11.0):
+    - FirebaseCrashlytics (~> 12.7.0)
+  - FirebaseAnalytics (12.7.0):
+    - FirebaseAnalytics/Default (= 12.7.0)
+    - FirebaseCore (~> 12.7.0)
+    - FirebaseInstallations (~> 12.7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - FirebaseAnalytics/Default (12.7.0):
+    - FirebaseCore (~> 12.7.0)
+    - FirebaseInstallations (~> 12.7.0)
+    - GoogleAppMeasurement/Default (= 12.7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - FirebaseCore (12.7.0):
+    - FirebaseCoreInternal (~> 12.7.0)
+    - GoogleUtilities/Environment (~> 8.1)
+    - GoogleUtilities/Logger (~> 8.1)
+  - FirebaseCoreExtension (12.7.0):
+    - FirebaseCore (~> 12.7.0)
+  - FirebaseCoreInternal (12.7.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+  - FirebaseCrashlytics (12.7.0):
+    - FirebaseCore (~> 12.7.0)
+    - FirebaseInstallations (~> 12.7.0)
+    - FirebaseRemoteConfigInterop (~> 12.7.0)
+    - FirebaseSessions (~> 12.7.0)
+    - GoogleDataTransport (~> 10.1)
+    - GoogleUtilities/Environment (~> 8.1)
+    - nanopb (~> 3.30910.0)
+    - PromisesObjC (~> 2.4)
+  - FirebaseInstallations (12.7.0):
+    - FirebaseCore (~> 12.7.0)
+    - GoogleUtilities/Environment (~> 8.1)
+    - GoogleUtilities/UserDefaults (~> 8.1)
+    - PromisesObjC (~> 2.4)
+  - FirebaseRemoteConfigInterop (12.7.0)
+  - FirebaseSessions (12.7.0):
+    - FirebaseCore (~> 12.7.0)
+    - FirebaseCoreExtension (~> 12.7.0)
+    - FirebaseInstallations (~> 12.7.0)
+    - GoogleDataTransport (~> 10.1)
+    - GoogleUtilities/Environment (~> 8.1)
+    - GoogleUtilities/UserDefaults (~> 8.1)
+    - nanopb (~> 3.30910.0)
+    - PromisesSwift (~> 2.1)
+  - GoogleAdsOnDeviceConversion (3.2.0):
+    - GoogleUtilities/Environment (~> 8.1)
+    - GoogleUtilities/Logger (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - nanopb (~> 3.30910.0)
+  - GoogleAppMeasurement/Core (12.7.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - GoogleAppMeasurement/Default (12.7.0):
+    - GoogleAdsOnDeviceConversion (~> 3.2.0)
+    - GoogleAppMeasurement/Core (= 12.7.0)
+    - GoogleAppMeasurement/IdentitySupport (= 12.7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - GoogleAppMeasurement/IdentitySupport (12.7.0):
+    - GoogleAppMeasurement/Core (= 12.7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.1)
+    - GoogleUtilities/MethodSwizzler (~> 8.1)
+    - GoogleUtilities/Network (~> 8.1)
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+    - nanopb (~> 3.30910.0)
+  - GoogleDataTransport (10.1.0):
+    - nanopb (~> 3.30910.0)
+    - PromisesObjC (~> 2.4)
+  - GoogleUtilities/AppDelegateSwizzler (8.1.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.11.0):
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.11.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Environment (8.1.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.1.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.11.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/MethodSwizzler (8.1.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.11.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Network (8.1.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Privacy
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.11.0)"
-  - GoogleUtilities/Reachability (7.11.0):
+  - "GoogleUtilities/NSData+zlib (8.1.0)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.1.0)
+  - GoogleUtilities/Reachability (8.1.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (7.11.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/UserDefaults (8.1.0):
     - GoogleUtilities/Logger
-  - nanopb (2.30909.0):
-    - nanopb/decode (= 2.30909.0)
-    - nanopb/encode (= 2.30909.0)
-  - nanopb/decode (2.30909.0)
-  - nanopb/encode (2.30909.0)
-  - PocketAnalytics (1.2.12)
-  - PocketAnalyticsDrain/AppsFlyer (1.2.12):
-    - AppsFlyerFramework
+    - GoogleUtilities/Privacy
+  - nanopb (3.30910.0):
+    - nanopb/decode (= 3.30910.0)
+    - nanopb/encode (= 3.30910.0)
+  - nanopb/decode (3.30910.0)
+  - nanopb/encode (3.30910.0)
+  - PocketAnalytics (1.2.13)
+  - PocketAnalyticsDrain/AppMetrica (1.2.13):
+    - AppMetricaAdSupport
+    - AppMetricaCore
     - PocketAnalytics
-  - PocketAnalyticsDrain/Facebook (1.2.12):
+  - PocketAnalyticsDrain/Facebook (1.2.13):
     - FBSDKCoreKit
     - PocketAnalytics
-  - PocketAnalyticsDrain/Firebase (1.2.12):
+  - PocketAnalyticsDrain/Firebase (1.2.13):
     - Firebase/Core
     - Firebase/Crashlytics
     - PocketAnalytics
-  - PocketAnalyticsDrain/Tenjin (1.2.12):
+  - PocketAnalyticsDrain/Tenjin (1.2.13):
     - PocketAnalytics
     - TenjinSDK
-  - PocketAnalyticsDrain/Yandex (1.2.12):
-    - PocketAnalytics
-    - YandexMobileMetrica/Dynamic
-  - PromisesObjC (2.1.1)
-  - TenjinSDK (1.12.21)
-  - YandexMobileMetrica/Dynamic (4.4.0):
-    - YandexMobileMetrica/Dynamic/Core (= 4.4.0)
-    - YandexMobileMetrica/Dynamic/Crashes (= 4.4.0)
-  - YandexMobileMetrica/Dynamic/Core (4.4.0)
-  - YandexMobileMetrica/Dynamic/Crashes (4.4.0):
-    - YandexMobileMetrica/Dynamic/Core
+  - PromisesObjC (2.4.0)
+  - PromisesSwift (2.4.0):
+    - PromisesObjC (= 2.4.0)
+  - TenjinSDK (1.14.11)
 
 DEPENDENCIES:
   - PocketAnalytics (from `../`)
-  - PocketAnalyticsDrain/AppsFlyer (from `../`)
+  - PocketAnalyticsDrain/AppMetrica (from `../`)
   - PocketAnalyticsDrain/Facebook (from `../`)
   - PocketAnalyticsDrain/Firebase (from `../`)
   - PocketAnalyticsDrain/Tenjin (from `../`)
-  - PocketAnalyticsDrain/Yandex (from `../`)
 
 SPEC REPOS:
   trunk:
-    - AppsFlyerFramework
+    - AppMetricaAdSupport
+    - AppMetricaCore
+    - AppMetricaCoreExtension
+    - AppMetricaCoreUtils
+    - AppMetricaEncodingUtils
+    - AppMetricaFMDB
+    - AppMetricaHostState
+    - AppMetricaIdentifiers
+    - AppMetricaKeychain
+    - AppMetricaLog
+    - AppMetricaLogSwift
+    - AppMetricaNetwork
+    - AppMetricaPlatform
+    - AppMetricaProtobuf
+    - AppMetricaProtobufUtils
+    - AppMetricaStorageUtils
+    - AppMetricaSynchronization
     - FBAEMKit
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
+    - FirebaseCoreExtension
     - FirebaseCoreInternal
     - FirebaseCrashlytics
     - FirebaseInstallations
+    - FirebaseRemoteConfigInterop
+    - FirebaseSessions
+    - GoogleAdsOnDeviceConversion
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - PromisesSwift
     - TenjinSDK
-    - YandexMobileMetrica
 
 EXTERNAL SOURCES:
   PocketAnalytics:
@@ -161,26 +256,46 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppsFlyerFramework: dc9aa675faa8e1a2ed40fb295d3c5408ee2b972a
-  FBAEMKit: c7f82b5145d446bcbbcd50485c032689032fc6a2
-  FBSDKCoreKit: 7542746fc63a2a38dd6a865eeb54268341f37b83
-  FBSDKCoreKit_Basics: 92d6b26c0bed30ab09bbdd96dccaa26e6c9978d1
-  Firebase: f92fc551ead69c94168d36c2b26188263860acd9
-  FirebaseAnalytics: 036232b6a1e2918e5f67572417be1173576245f3
-  FirebaseCore: 988754646ab3bd4bdcb740f1bfe26b9f6c0d5f2a
-  FirebaseCoreInternal: 29b76f784d607df8b2a1259d73c3f04f1210137b
-  FirebaseCrashlytics: f20d956f8229010b645e534693c39e0b7843c268
-  FirebaseInstallations: e2f26126089dcf41e215f7b8925af8d953c7d602
-  GoogleAppMeasurement: c7d6fff39bf2d829587d74088d582e32d75133c3
-  GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
-  GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
-  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  PocketAnalytics: cebecd2614db363b6cbfc5de4430b9fddd96b297
-  PocketAnalyticsDrain: 5c6347be8cd922517449428b3416ae648f009244
-  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
-  TenjinSDK: ee5c75ddf4d7e0ea1b8da79ccd83f5d919ab5d68
-  YandexMobileMetrica: baf7cea47cb87fc9af963c4f747ce8dd7df3d7c0
+  AppMetricaAdSupport: 18f733285fbb9fdba3e24f8b2ea97b9e3e2aa6df
+  AppMetricaCore: 335edc5051c389efae0b4eed742dc8e6a2a20cca
+  AppMetricaCoreExtension: f5ad85186ce820b791978ffb0a5c0a0a3fb2b129
+  AppMetricaCoreUtils: e4b3a0cf5172d07f80aa27afe81b22cb503e5b1b
+  AppMetricaEncodingUtils: 83e3190cdc7bd35886a8ce9bad0fb06a1167b2b1
+  AppMetricaFMDB: 2b2aa256329cd91eb30028e38926c5cedf3b4d23
+  AppMetricaHostState: 31668658618690ad965e0b541f9a04e643598f97
+  AppMetricaIdentifiers: 6ac4718be8e4cb339fb7ad5d93b626be4bc9f4f5
+  AppMetricaKeychain: 734e29550fb2bb289bf911f7f26766a7530c5dd4
+  AppMetricaLog: 5b2ee136246a3056a0b96126bace4208627880c3
+  AppMetricaLogSwift: b994328ab290ae4752b7e8dc6c3460b5e9ae9e10
+  AppMetricaNetwork: c1ba532e5701d312872765fe4b52130020ff24e4
+  AppMetricaPlatform: 2721f447fff64101da2603f8cd35b5b8cc0042b5
+  AppMetricaProtobuf: 673e132fa8cb5bdf0939335196fb876a5a39ba17
+  AppMetricaProtobufUtils: e02dd2b4fdde675f67d69b9ba2c531f6e777bb7b
+  AppMetricaStorageUtils: 9017d6d7b139a05fe9e9a59e6c944f3c5d882383
+  AppMetricaSynchronization: 89023e0477f5d597d2530b8ff7f858e34c652f17
+  FBAEMKit: 56a4f5a9607957b547b6458b17a98c5bb2736367
+  FBSDKCoreKit: 54f1240567e16862ab71c53c33dc347db5c524c5
+  FBSDKCoreKit_Basics: eb530cd6a79030dbb11df460aafb2767bcad9028
+  Firebase: 2d19a10c9a2e48ac532a4303115d3fc9b2798396
+  FirebaseAnalytics: e423129866107aeacf6010a280b9c9829f9ea50d
+  FirebaseCore: c7b57863ce0859281a66d16ca36d665c45d332b5
+  FirebaseCoreExtension: 731a5744970bcd73ad95ab2a2b8a1f46353e86dd
+  FirebaseCoreInternal: 571a2dd8c975410966199623351db3a3265c874d
+  FirebaseCrashlytics: 9ce9ce4bb179e31ab91a937d0a73d302a9752d1b
+  FirebaseInstallations: 6d05424a046b68ca146b4de4376f05b4e9262fc3
+  FirebaseRemoteConfigInterop: 0bae7d21510b3a0a79af727961c4973aac585add
+  FirebaseSessions: bc59e7d0ba90f96f40325fd1defbdec86ba26f20
+  GoogleAdsOnDeviceConversion: d68c69dd9581a0f5da02617b6f377e5be483970f
+  GoogleAppMeasurement: 8f59e08efecfa1bcd57f0a56fab07d079366268c
+  GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
+  GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
+  nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
+  PocketAnalytics: 330e586d668555b8b8502c39dafd65e31bf2f0b6
+  PocketAnalyticsDrain: 462a106ee4ed21b03ba724e5d4363a4dc7dae3a6
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
+  TenjinSDK: 957dd4218bcbfb34bf2cfe29befd97a8961ec7c7
 
-PODFILE CHECKSUM: 3f23e60a8a316e360b188df5e237b6f6a0e264e0
+PODFILE CHECKSUM: 1182fcbe7734124fbfb0cf8c62e97b85290535fa
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.16.2

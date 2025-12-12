@@ -32,8 +32,8 @@ end
 
 lane :submit_pod do |options|
   push_to_git_remote(
-    local_branch: "master",
-    remote_branch: "master",
+    local_branch: "main",
+    remote_branch: "main",
     remote: "origin"
   )
   

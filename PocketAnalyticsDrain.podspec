@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.author           = { 'sroik' => 'vasili.kazhanouski@gmail.com' }
   s.source           = { :git => 'git@github.com:pocket-ninja/pocket-analytics.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '14.0'
-  s.swift_version = '5.5'
+  s.ios.deployment_target = '15.0'
+  s.swift_version = '5.9'
 
   s.static_framework = true
   s.default_subspec = 'Core'
@@ -43,9 +43,10 @@ Pod::Spec.new do |s|
     ss.dependency 'TenjinSDK'
   end
   
-  s.subspec 'Yandex' do |ss|
-    ss.source_files = 'Analytics/Yandex/**/*.{h,m,swift}'
+  s.subspec 'AppMetrica' do |ss|
+    ss.source_files = 'Analytics/AppMetrica/**/*.{h,m,swift}'
     ss.dependency 'PocketAnalytics'
-    ss.dependency 'YandexMobileMetrica/Dynamic'
+    ss.dependency 'AppMetricaCore'
+    ss.dependency 'AppMetricaAdSupport'
   end
 end
